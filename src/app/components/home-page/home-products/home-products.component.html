@@ -1,7 +1,7 @@
 <div class="section-product">
     <h4 class="heading">Top picks product <br>of the week</h4>
     <div class="box-product">
-        <a class="product-item" *ngFor="let item of products" [routerLink]="['/products', item.id]">
+        <a class="product-item" *ngFor="let item of products" [routerLink]="['/product', item.id]">
             <div class="box-image">
                 <img src="{{item.img}}" alt="" />
             </div>

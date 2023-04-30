@@ -1,8 +1,9 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { Routes, RouterModule } from '@angular/router';
+import { FormsModule } from '@angular/forms';
 
-import { AppRoutingModule } from './app-routing.module';
+// import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomePageComponent } from './components/home-page/home-page.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
@@ -13,7 +14,12 @@ import { HomeProductsComponent } from './components/home-page/home-products/home
 import { FooterComponent } from './components/footer/footer.component';
 import { ProductDetailsComponent } from './components/product-details/product-details.component';
 
+const routes: Routes = [
+  { path: '', component: HomePageComponent },
+  { path: 'product/:productId', component: ProductDetailsComponent },
+]
 @NgModule({
+  imports: [BrowserModule, FormsModule, RouterModule.forRoot(routes)],
   declarations: [
     AppComponent,
     HomePageComponent,
@@ -24,14 +30,6 @@ import { ProductDetailsComponent } from './components/product-details/product-de
     HomeProductsComponent,
     FooterComponent,
     ProductDetailsComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    RouterModule.forRoot([
-      { path: '', component: HomePageComponent },
-      { path: 'products/:Id', component: ProductDetailsComponent },
-    ])
   ],
   providers: [],
   bootstrap: [AppComponent]
