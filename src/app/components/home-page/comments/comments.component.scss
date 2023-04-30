@@ -1,0 +1,29 @@
+.comments-section {
+    padding: 80px;
+    margin: 0 100px;
+    text-align: center;
+    background: linear-gradient(110deg, transparent, #f6f6f6);
+    margin-bottom: 50px;
+    border-radius: 3px;
+    .comment-item {
+        width: 50%;
+        margin: 0 auto;
+        strong {
+            font-size: 50px;
+            font-style: italic;
+        }
+        .content {
+            font-size: 18px;
+            font-weight: 600;
+            color: #aeaeb3;
+            line-height: 1.5;
+            font-style: italic;
+        }
+        .author {
+            font-size: 20px;
+            margin-top: 20px;
+            font-weight: 600;
+            color: #131313;
+        }
+    }
+}

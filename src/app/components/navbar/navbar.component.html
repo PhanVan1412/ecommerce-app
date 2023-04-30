@@ -10,10 +10,10 @@
             </div>
         </div>
         <div class="navbar-right">
-            <div class="navbar-item" *ngFor="let item of navbarRight">
+            <a class="navbar-item" *ngFor="let item of navbarRight" [routerLink]="item.path">
                 <img *ngIf="item.icon" src="{{item.icon}}" alt="{{item.name}}" />
                 <span>{{item.name}}</span>
-            </div>
+            </a>
         </div>
     </div>
 </div>

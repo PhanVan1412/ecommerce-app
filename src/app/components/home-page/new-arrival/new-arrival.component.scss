@@ -1,0 +1,45 @@
+.new-arrival-section {
+    padding: 80px 100px;
+    .container {
+        display: flex;
+        gap: 50px;
+        background: #f6f6f6;
+        align-items: center;
+        border-radius: 3px;
+        .box-image {
+            width: 50%;
+            text-align: center;
+            img {
+                width: 60%;
+            }
+        }
+        .box-content {
+            width: 50%;
+            .title {
+                font-size: 20px;
+                line-height: 2;
+                font-weight: 600;
+            }
+            .content {
+                font-size: 40px;
+                font-weight: 800;
+            }
+            .btn-primary {
+                width: 150px;
+                height: 45px;
+                box-sizing: border-box;
+                border-radius: 3px;
+                color: #fff;
+                font-size: 16px;
+                font-weight: 600;
+                padding: 10px 20px;
+                border: none;
+                margin-top: 30px;
+                background-color: #e5853e;
+                cursor: pointer;
+                text-align: center;
+                line-height: 25px;
+            }
+        }
+    }
+}

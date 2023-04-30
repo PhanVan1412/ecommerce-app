@@ -13,10 +13,16 @@ import { CategoryComponent } from './components/home-page/category/category.comp
 import { HomeProductsComponent } from './components/home-page/home-products/home-products.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ProductDetailsComponent } from './components/product-details/product-details.component';
+import { CartComponent } from './components/cart/cart.component';
+import { ExperienceComponent } from './components/home-page/experience/experience.component';
+import { CommentsComponent } from './components/home-page/comments/comments.component';
+import { NewArrivalComponent } from './components/home-page/new-arrival/new-arrival.component';
+import { JoinMailComponent } from './components/home-page/join-mail/join-mail.component';
 
 const routes: Routes = [
   { path: '', component: HomePageComponent },
   { path: 'product/:productId', component: ProductDetailsComponent },
+  { path: 'cart', component: CartComponent},
 ]
 @NgModule({
   imports: [BrowserModule, FormsModule, RouterModule.forRoot(routes)],
@@ -29,7 +35,12 @@ const routes: Routes = [
     CategoryComponent,
     HomeProductsComponent,
     FooterComponent,
-    ProductDetailsComponent
+    ProductDetailsComponent,
+    CartComponent,
+    ExperienceComponent,
+    CommentsComponent,
+    NewArrivalComponent,
+    JoinMailComponent
   ],
   providers: [],
   bootstrap: [AppComponent]

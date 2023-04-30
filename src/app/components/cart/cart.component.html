@@ -1,0 +1,13 @@
+
+<div class="cart-container">
+    <h3 class="heading">Cart</h3>
+    <div class="product-list-cart">
+        <div class="product-item" *ngFor="let item of items">
+          <img class="img-cart" src="{{item.img}}" alt="">
+          <div class="box-content">
+            <h5>{{ item.name }}</h5>
+            <span>{{ item.price | currency }}</span>
+          </div>
+        </div>
+    </div>
+</div>

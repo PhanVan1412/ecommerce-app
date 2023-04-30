@@ -1,0 +1,47 @@
+.join-our-mail {
+    padding: 80px 100px;
+    display: flex;
+    gap: 100px;
+    align-items: center;
+    .box-content {
+        width: 40%;
+        .title {
+            font-size: 40px;
+            font-weight: 800;
+            line-height: 1.2;
+        }
+        .sub {
+            font-size: 18px;
+            color: #aeaeb3;
+            margin-top: 20px;
+            line-height: 1.6;
+        }
+    }
+    .box-input {
+        width: 50%;
+        .container {
+            display: flex;
+            justify-content: space-between;
+            width: 80%;
+            padding: 10px 20px;
+            border-bottom: 1px solid #131313;
+        }
+        input {
+            border: unset;
+            outline: unset;
+            &#mail {
+                font-size: 16px;
+                height: 30px;
+                width: 300px;
+            }
+        }
+        button {
+            border: unset;
+            background-color: unset;
+            font-size: 18px;
+            font-weight: 600;
+            color: #131313;
+            cursor: pointer;
+        }
+    }
+}

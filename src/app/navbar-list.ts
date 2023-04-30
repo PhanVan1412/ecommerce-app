@@ -21,10 +21,12 @@ export const navbarRight = [
     {
         id: 1,
         name: "My cart",
-        icon: 'assets/cart-shopping-solid.svg'
+        icon: 'assets/cart-shopping-solid.svg',
+        path: 'cart'
     },
     {
         id: 2,
-        name: "Register"
+        name: "Register",
+        path: ''
     }
 ]
