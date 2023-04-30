@@ -1,0 +1,19 @@
+<div class="navbar">
+    <div class="brand-logo">
+        <img src="assets/fan-solid.svg" alt="" width="30px" height="30px">
+        <span>Flower Shop</span>
+    </div>
+    <div class="container">
+        <div class="navbar-left">
+            <div class="navbar-item" *ngFor="let item of navbarLeft">
+                <span>{{item.name}}</span>
+            </div>
+        </div>
+        <div class="navbar-right">
+            <div class="navbar-item" *ngFor="let item of navbarRight">
+                <img *ngIf="item.icon" src="{{item.icon}}" alt="{{item.name}}" />
+                <span>{{item.name}}</span>
+            </div>
+        </div>
+    </div>
+</div>

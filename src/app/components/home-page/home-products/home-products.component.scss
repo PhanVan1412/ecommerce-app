@@ -1,0 +1,65 @@
+.section-product {
+    a {
+        text-decoration: none;
+    }
+    padding: 80px 100px;
+    .heading {
+        text-align: center;
+        font-size: 25px;
+        text-transform: capitalize;
+        line-height: 1.2;
+    }
+    .box-product {
+        display: flex;
+        gap: 20px;
+        text-align: center;
+        .product-item {
+            width: 25%;
+        }
+        .box-image {
+            height: 230px;
+            text-align: center;
+            img {
+                width: 70%;
+            }
+        }
+        .box-content {
+            text-align: center;
+            padding: 10px 20px;
+            .name {
+                font-size: 18px;
+                color: #131313;
+                line-height: 1.5;
+            }
+            .category {
+                font-size: 16px;
+                color: #aeaeae;
+                line-height: 2;
+            }
+            .price {
+                display: block;
+                color: #131313;
+                font-size: 18px;
+            }
+            .star {
+                display: inline-block;
+                color: #131313;
+                font-size: 18px;
+            }
+        }
+        .btn-add {
+            width: 150px;
+            height: 45px;
+            box-sizing: border-box;
+            border-radius: 3px;
+            color: #fff;
+            font-size: 16px;
+            font-weight: 600;
+            padding: 10px 20px;
+            border: none;
+            margin-top: 30px;
+            background-color: #e5853e;
+            cursor: pointer;
+        }
+    }
+}

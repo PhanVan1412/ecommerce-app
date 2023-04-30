@@ -1,0 +1,17 @@
+<div class="section-product">
+    <h4 class="heading">Top picks product <br>of the week</h4>
+    <div class="box-product">
+        <a class="product-item" *ngFor="let item of products" [routerLink]="['/products', item.id]">
+            <div class="box-image">
+                <img src="{{item.img}}" alt="" />
+            </div>
+            <div class="box-content">
+                <h5 class="name">{{item.name}}</h5>
+                <p class="category">{{item.category}}</p>
+                <span class="price">{{item.price}}</span>
+                <!-- <span class="star">{{ item.star}}</span> -->
+            </div>
+            <button class="btn-add" (click)="handelAdd($event)">Buy now</button>
+        </a>
+    </div>
+</div>

@@ -1,0 +1,91 @@
+.section-hero {
+    background: #f6f6f6;
+    display: flex;
+    padding: 80px 100px;
+    align-items: center;
+    position: relative;
+    .content-wrapper {
+        width: 50%;
+        .title {
+            font-size: 61px;
+            font-weight: 700;
+            color: #131313;
+            line-height: 1.2;
+        }
+        .descriptions {
+            font-size: 18px;
+            line-height: 2;
+            color: #aeaeae;
+            font-weight: 600;
+            margin-top: 25px;
+        }
+        .btn-primary {
+            width: 150px;
+            height: 45px;
+            box-sizing: border-box;
+            border-radius: 3px;
+            color: #fff;
+            font-size: 16px;
+            font-weight: 600;
+            padding: 10px 20px;
+            border: none;
+            margin-top: 30px;
+            background-color: #e5853e;
+            cursor: pointer;
+        }
+        .box-total {
+            margin-top: 70px;
+            display: flex;
+            gap: 40px;
+            .total-item {
+                width: 150px;
+                span {
+                    font-size: 30px;
+                    color: #131313;
+                    font-weight: 600;
+                    letter-spacing: 0.5px;
+                }
+                p {
+                    font-size: 16px;
+                    color: #aeaeae;
+                    line-height: 2;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+    .image-wrapper {
+        width: 50%;
+        img {
+            width: 100%;
+        }
+        .box-add {
+            width: 230px;
+            height: 100px;
+            background: #fff;
+            border-radius: 5px;
+            padding: 20px 40px;
+            box-sizing: border-box;
+            position: absolute;
+                right: 219px;
+    bottom: 118px;
+            .title {
+                font-size: 20px;
+                color: #131313;
+            }
+            .add {
+                font-size: 16px;
+                color: #131313;
+                display: flex;
+                align-items: center;
+                margin-top: 20px;
+                cursor: pointer;
+                img {
+                    width: 20px;
+                    height: 20px;
+                    margin-left: 20px;
+                }
+            }
+        }
+    }
+}
