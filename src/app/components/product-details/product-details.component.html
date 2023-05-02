@@ -1,4 +1,4 @@
-<div class="product-item" *ngIf="product">
+<a class="product-item" *ngIf="product" [routerLink]="['/product', product.id]">
     <div class="product-details">
         <div class="box box-image">
             <img src="{{product.img}}" alt="">
@@ -23,7 +23,7 @@
             <button class="btn-add-cart" (click)="addToCart(product)">Buy now</button>
         </div>
     </div>
-</div>
+</a>
 <div class="product-recommend">
     <app-home-products></app-home-products>
 </div>

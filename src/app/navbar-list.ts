@@ -30,7 +30,11 @@ export const navbarRight = [
     },
     {
         id: 2,
-        name: "Register",
-        path: ''
+        name: "Admin",
+        path: 'admin'
+    },
+    {
+        id: 3,
+        name: 'Register'
     }
 ]

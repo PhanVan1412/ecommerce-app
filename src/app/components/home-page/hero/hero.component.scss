@@ -20,6 +20,9 @@
             margin-top: 25px;
         }
         .btn-primary {
+            display: block;
+            text-align: center;
+            text-decoration: none;
             width: 150px;
             height: 45px;
             box-sizing: border-box;
@@ -32,6 +35,7 @@
             margin-top: 30px;
             background-color: #e5853e;
             cursor: pointer;
+            line-height: 25px;
         }
         .box-total {
             margin-top: 70px;

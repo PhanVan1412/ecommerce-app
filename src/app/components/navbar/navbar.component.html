@@ -12,6 +12,7 @@
         <div class="navbar-right">
             <a class="navbar-item" *ngFor="let item of navbarRight" [routerLink]="item.path">
                 <img *ngIf="item.icon" src="{{item.icon}}" alt="{{item.name}}" />
+                <span *ngIf="item.path === 'cart'" class="total-cart">{{count}}</span>
                 <span>{{item.name}}</span>
             </a>
         </div>

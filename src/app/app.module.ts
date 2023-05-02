@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { Routes, RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 
 // import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -23,7 +24,7 @@ import { CategoryPageComponent } from './components/category-page/category-page.
 import { PromoPageComponent } from './components/promo-page/promo-page.component';
 import { FilterCategoryComponent } from './components/filter-category/filter-category.component';
 import { ProductItemComponent } from './components/product-item/product-item.component';
-import { AdminComponent } from './admin/admin.component';
+import { AdminComponent } from './components/admin/admin.component';
 
 const routes: Routes = [
   { path: '', component: HomePageComponent },
@@ -31,11 +32,12 @@ const routes: Routes = [
   { path: 'cart', component: CartComponent},
   { path: 'products', component: ProductsPageComponent},
   { path: 'category', component: CategoryPageComponent},
-  { path: 'promo', component: PromoPageComponent}
+  { path: 'promo', component: PromoPageComponent},
+  { path: 'admin', component: AdminComponent }
   
 ]
 @NgModule({
-  imports: [BrowserModule, FormsModule, RouterModule.forRoot(routes)],
+  imports: [BrowserModule, FormsModule, RouterModule.forRoot(routes, {scrollPositionRestoration: 'enabled'}), ReactiveFormsModule],
   declarations: [
     AppComponent,
     HomePageComponent,

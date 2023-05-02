@@ -1,0 +1,61 @@
+.admin-page {
+    padding: 80px 100px;
+    .heading {
+        font-size: 24px;
+        color: #131313;
+        line-height: 1.5;
+    }
+    .add-product-form {
+        .form-group {
+            width: 40%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            padding: 20px 30px;
+            .form-item {
+                display: flex;
+                flex-direction: column;
+                gap: 2px;
+                label {
+                    color: #aeaea4;
+                    font-size: 16px;
+                    font-weight: 600;
+                    line-height: 2;
+                }
+                input {
+                    border: unset;
+                    outline: unset;
+                    padding: 10px 20px;
+                    box-shadow: rgba(99, 99, 99, 0.1) 0px 2px 8px 0px;
+                }
+            }
+        }
+        .button-group {
+            display: flex;
+            gap: 20px;
+            position: relative;
+            right: -90px;
+            .btn {
+                width: 150px;
+                height: 45px;
+                box-sizing: border-box;
+                border-radius: 3px;
+                color: #fff;
+                font-size: 16px;
+                font-weight: 600;
+                padding: 10px 20px;
+                border: none;
+                margin-top: 30px;
+                background-color: #e5853e;
+                cursor: pointer;
+                &.btn-close {
+                    background-color: #fff;
+                    color: #e5853e;
+                    border: 2px solid;
+                }
+            }
+        }
+    }
+}
