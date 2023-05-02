@@ -1,0 +1,8 @@
+<div class="product-page">
+    <app-filter-category></app-filter-category>
+    <div class="wrapper">
+        <div class="porduct-item" *ngFor="let product of productsList">
+            <app-product-item [product]="product"></app-product-item>
+        </div>
+    </div>
+</div>

@@ -18,11 +18,21 @@ import { ExperienceComponent } from './components/home-page/experience/experienc
 import { CommentsComponent } from './components/home-page/comments/comments.component';
 import { NewArrivalComponent } from './components/home-page/new-arrival/new-arrival.component';
 import { JoinMailComponent } from './components/home-page/join-mail/join-mail.component';
+import { ProductsPageComponent } from './components/products-page/products-page.component';
+import { CategoryPageComponent } from './components/category-page/category-page.component';
+import { PromoPageComponent } from './components/promo-page/promo-page.component';
+import { FilterCategoryComponent } from './components/filter-category/filter-category.component';
+import { ProductItemComponent } from './components/product-item/product-item.component';
+import { AdminComponent } from './admin/admin.component';
 
 const routes: Routes = [
   { path: '', component: HomePageComponent },
   { path: 'product/:productId', component: ProductDetailsComponent },
   { path: 'cart', component: CartComponent},
+  { path: 'products', component: ProductsPageComponent},
+  { path: 'category', component: CategoryPageComponent},
+  { path: 'promo', component: PromoPageComponent}
+  
 ]
 @NgModule({
   imports: [BrowserModule, FormsModule, RouterModule.forRoot(routes)],
@@ -40,7 +50,13 @@ const routes: Routes = [
     ExperienceComponent,
     CommentsComponent,
     NewArrivalComponent,
-    JoinMailComponent
+    JoinMailComponent,
+    ProductsPageComponent,
+    CategoryPageComponent,
+    PromoPageComponent,
+    FilterCategoryComponent,
+    ProductItemComponent,
+    AdminComponent
   ],
   providers: [],
   bootstrap: [AppComponent]

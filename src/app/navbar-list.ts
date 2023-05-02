@@ -1,19 +1,23 @@
 export const navbarLeft = [
     {
         id: 1,
-        name: 'Home'
+        name: 'Home',
+        path: ''
     },
     {
         id: 2,
-        name: 'Products'
+        name: 'Products',
+        path: 'products'
     },
     {
         id: 3,
-        name: 'Category'
+        name: 'Category',
+        path: 'category'
     },
     {
         id: 4,
-        name: 'Promo'
+        name: 'Promo',
+        path: 'promo'
     }
 ]
 

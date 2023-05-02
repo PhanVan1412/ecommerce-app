@@ -1,0 +1,12 @@
+.product-page {
+    padding: 60px 100px;
+    .wrapper {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        margin-top: 60px;
+        .porduct-item {
+            width: calc(20% - 10px);
+        }
+    }
+}

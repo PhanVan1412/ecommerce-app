@@ -1,0 +1,19 @@
+.container-filter {
+    display: flex;
+    background-color: #fafafa;
+    justify-content: space-between;
+    border-radius: 5px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    .filter-item {
+        padding: 30px 20px;
+        background-color: #fafafa;
+        cursor: pointer;
+        font-size: 18px;
+        color: #131313;
+        min-width: 10%;
+        font-weight: 600;
+        &:hover {
+            background-color: #f4f4f4;
+        }
+    }
+}

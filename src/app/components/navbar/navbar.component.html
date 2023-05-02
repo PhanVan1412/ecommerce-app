@@ -5,9 +5,9 @@
     </a>
     <div class="container">
         <div class="navbar-left">
-            <div class="navbar-item" *ngFor="let item of navbarLeft">
+            <a class="navbar-item" *ngFor="let item of navbarLeft" [routerLink]="item.path">
                 <span>{{item.name}}</span>
-            </div>
+            </a>
         </div>
         <div class="navbar-right">
             <a class="navbar-item" *ngFor="let item of navbarRight" [routerLink]="item.path">
